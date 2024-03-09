@@ -246,3 +246,22 @@ footer{
   justify-content: center;
   align-self: center;
 }
+
+.busqueda select{
+  padding: 10px;
+  margin: 3px;
+}
+
+#location_quicksearch{
+  width: 300px;
+  padding: 10px;
+  margin: 3px
+}
+
+.busqueda button{
+  padding: 10px;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: rgb(104, 189, 19);
+  color: #ffffff;
+}
