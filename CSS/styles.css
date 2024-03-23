@@ -116,247 +116,259 @@
   font-style: italic;
 }
 
+:root{
 
-*{
-    padding: 0;
-    margin: 0;
-   
+  /*Colores*/
+  --bg-color-principal:#097abb;
+  --bg-gradient-color:linear-gradient(to right, rgb(9, 122, 187), rgb(0, 162, 255)) ;
+  --text-color-principal:#000000;
+  --text-color-secondary:#ffffff;
+  --text-color-title:#0a095c;
+  --text-color-price:#0a8a15;
+  --text-color-nav-a-hover:#0a095c;
+  --text-shadow: 2px 2px 3px #000000;
+
+  /*Fonts*/
+  --font-principal: ;
+  --font-secondary: ;
+
+  /*Padding*/
+  --padding-xx-large:300px;
+  --padding-x-large: 90px;
+  --padding-large: 70px;
+  --padding-medium: 50px;
+  --padding-small: 30px;
+  --padding-x-small: 10px;
+
+  /*Margin*/
+  --margin-x-large: 100px;
+  --margin-large: 75px;
+  --margin-medium: 50px;
+  --margin-small: 30px;
+  --margin-small-2: 20px;
+  --margin-small-1: 15px;
+  --margin-x-small: 10px;
+
+
 }
 
-html{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(189, 189, 189);
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    width: 1200px;
-    margin: 0 auto;
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-nav{
-  height: 120px;
-  background-color: rgb(11, 139, 212);
-  align-content: center;
+body {
+  margin: 0 auto;
+  width: 100%
 }
 
-.menu_nav{
+.header_nav {
+  position: fixed;
+  width: 100%;
+  background: var(--bg-gradient-color)
+}
+
+.menu_nav {
+  width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-
-
-  margin-right: 20px;
 }
 
-.menu_nav img{
-  width: 240px;
-  margin-left: 30px;
+.menu_nav img {
+  width: 250px;
+  margin-right: var(--margin-x-large);
 }
 
-.menu_nav a{
-    text-decoration: none;
-    font-family: "Relaway", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin: 0 10px;
-    color: #ffffff;
+.menu_nav a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: var(--margin-medium);
+  color: var(--text-color-secondary);
+  transition: 0.5s;
 }
 
-footer{
-  background-color: rgb(11, 139, 212);
+.menu_nav a:hover {
+  color:var(--text-color-nav-a-hover);
+}
+
+footer {
+  background: var(--bg-gradient-color);
   align-items: center;
-  padding: 30px;
+  padding: var(--padding-large);
   height: 200px;
 }
 
-.menu_nav a:hover{
-  color:#171586;
+
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.footer_links{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer_nav a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color:var(--text-color-secondary);
+  margin: 5px;
 }
 
-.footer_nav a{
-    text-decoration: none;
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: rgb(55, 58, 73);
-    margin: 5px;
-}
-
-.info_footer{
+.info_footer {
   width: 200px;
-  color:#ffffff;
+  color:var(--text-color-nav-a);
   font-family: "Raleway", sans-serif;
 }
 
-.footer_nav a:hover{
-    color: rgb(255, 255, 255);
+.footer_nav a:hover {
+  color: var(--text-color-nav-a-hover)
 }
 
-.footer_nav{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 160px;
-    align-items: center;
+.footer_nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 160px;
+  align-items: center;
 }
 
-.copyright{
-    font-family: "Raleway", sans-serif;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 40px;
+.copyright {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .articulo1 {
-  width: auto;
-  background-image: url("../img/Foto1200.jpg");
+  width: 100%;
+  background-image: url("../img/pexels-photomix-company-101808.jpg");
   background-repeat: no-repeat;
   background-blend-mode: color-burn;
-  height: 770px;
+  height: 750px;
 }
 
-.articulo1 h2{
+.articulo1 h2 {
   text-align: center;
-  padding-top: 300px;
-  margin-bottom: 10px;
-  font-family: "Raleway", sans-serif;
-  color:#ffffff;
-  font-size: 30px;
-  text-shadow: 2px 2px 3px black;
+  padding-top: var(--padding-xx-large);
+  margin: var(--margin-small);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text-color-secondary);
+  font-size: 35px;
+  text-shadow: var(--text-shadow);
 }
 
-.social a img{
-    width: 35px;
-    transition: transform .3s;
+.social a img {
+  width: 35px;
+  transition: transform .3s;
 }
 
-.social a img:hover{
-    transform: scale(1.3);
+.social a img:hover {
+  transform: scale(1.3);
 }
 
-.busqueda{
+.busqueda {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-self: center;
 }
 
-.busqueda select{
-  padding: 10px;
+.busqueda select {
+  padding: var(--padding-x-small);
   margin: 3px;
 }
 
-#location_quicksearch{
+#location_quicksearch {
   width: 300px;
-  padding: 10px;
+  padding: var(--padding-x-small);
   margin: 3px
 }
 
-.busqueda button{
-  padding: 10px;
+.busqueda button {
+  padding: var(--padding-x-small);
   margin: 3px;
   border-radius: 5px;
-  background-color: rgb(65, 56, 196);
-  color: #ffffff;
+  background-color:var(--bg-color-principal);
+  color: var(--text-color-secondary);
 }
 
-.destacadas{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #ffffff;
+/*--------------------------------------------- CARDS START -----------------------------------------------*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+.grid-item {
+  width: 400px;
+  padding: var(--padding-small);
 }
 
-.destacadas h2{
-  font-family: "Barlow", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 40px;
-  padding: 20px;
-  color: teal;
-  margin: 10px 0 0 10px;
+.grid-item img{
+  width: 400px;
 }
 
-.grupo_cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.descripcion_propiedad{
+.grid-item p{
+  width: 400px;
+  text-align: justify;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-align: justify;
-  padding: 15px 0 15px 0;
-  
-}
-
-.grupo_cards h3{
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  padding: 15px 0 15px 0;
-  color:rgb(190, 210, 246);
-  font-size: 20px;
-  margin-left: 15px;
-}
-
-.card_titulo{
-  background-color: darkslateblue;
-}
-
-.card_destacadas{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  margin-bottom: 10px;
 }
 
 .precio{
+  width: 400px;
+}
+
+.precio p{
+  color: var(--text-color-price);
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  margin-top: var(--margin-small-1);
+  text-align: right;
+  font-weight: bold;
+}
+
+.grid-item h3{
+  width: 380px;
+  background-image: var(--bg-gradient-color) ;
+  padding: var(--padding-x-small);
+  color: var(--text-color-secondary);
+  font-family: "Barlow", sans-serif;
+
+}
+
+.destacadas-titulo{
+  font-size: 40px;
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 20px;
-  color: blue;
-  text-align: right;
+  margin: var(--margin-medium)0 0;
+  text-align: center;
+  color:var(--text-color-title);
 }
 
-.nosotros_info{
-  align-items: center;
-}
+/*--------------------------------------------- CARDS END ----------------------------------------------*/
 
-.info{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 50px 30px 50px;
-  background-color: #ffffffa6;
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  margin-bottom: 20px;
-}
-
-.info h3{
-  margin: 15px 0 5px 0;
-}

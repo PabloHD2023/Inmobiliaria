@@ -1,128 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../CSS/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="menu_nav">
-                    <div>
-                        <img src="../img/Logo Grupo 4-2.svg" alt="Logo grupo 4">
-                    </div>
-                    <div>
-                        <a href="./index.html">HOME</a>
-                        <a href="./html/nosotros.html">NOSOTROS</a>
-                        <a href="./html/alquileres.html">ALQUILERES</a>
-                        <a href="./html/ventas.html">VENTAS</a>
-                        <a href="./html/proyectos.html">PROYECTOS</a>
-                        <a href="./html/contacto.html">CONTACTO</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <article  class="articulo1">
-            <h2>Busqueda por categorías</h2>
-            <section class="busqueda">
-                <select aria-label="state" name="select" id="tipo_operacion">
-                    <option value="1" selected>Tipo Operacion</option>
-                    <option value="2">Venta</option>
-                    <option value="3">Alquiler</option>
-                    <option value="4">Alquiler temporario</option>
-                </select>
-                <select aria-label="state" name="propiedad" id="tipo_propiedad">
-                    <option value="1" selected>Tipo Propiedad</option>
-                    <option value="2">Casa</option>
-                    <option value="3">Ph</option>
-                    <option value="4">Oficina</option>
-                    <option value="5">Cochera</option>
-                    <option value="6">Locales</option>
-                    <option value="7">Galpón</option>
-                    <option value="8">Depósito</option>
-                    <option value="9">Terreno</option>
-                </select>
-                <div class="input">
-                    <input type="text" id="location_quicksearch" placeholder="Buscar por ubicación, dirección o calle" class="montserrat ui-autocomplete-input">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <div class="menu_nav">
+                <div>
+                    <img src="../img/Logo Grupo 4-2.svg" alt="Logo grupo 4">
                 </div>
                 <div>
-                    <button>BUSCAR</button>
-                </div>
-            </section>
-        </article>
-        <article>
-            <section class="destacadas">
-                <h2>Propiedades destacadas</h2>
-                <div class="grupo_cards">
-                    <div class="card_destacadas">
-                        <div class="card_titulo">
-                            <h3>Casa1</h3>
-                        </div>
-                        <img src="../img/pexels-pixabay-164558.jpg" alt="Casa1">
-                        <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
-                        <p class="precio">Precio: $1000000</p>
-                    </div>
-                    <div class="card_destacadas">
-                        <div class="card_titulo">
-                            <h3>Casa2</h3>
-                        </div>
-                        <img src="../img/pexels-pixabay-280222.jpg" alt="Casa2">
-                        <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
-                        <p class="precio">Precio: $1000000</p>
-                    </div>
-                    <div class="card_destacadas">
-                        <div class="card_titulo">
-                            <h3>Casa3</h3>
-                        </div>
-                        <img src="../img/pexels-pixabay-275484.jpg" alt="Casa3">
-                        <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
-                        <p class="precio">Precio: $1000000</p>
-                    </div>
-                </div>
-            </section>
-            <section class="destacadas">
-                <div class="grupo_cards">
-                    <div class="card_destacadas">
-                        <div class="card_titulo">
-                            <h3>Casa4</h3>
-                        </div>
-                        <img src="../img/pexels-pixabay-534151.jpg" alt="Casa4">
-                        <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
-                        <p class="precio">Precio: $1000000</p>
-                    </div>
-                    <div class="card_destacadas">
-                        <div class="card_titulo">
-                            <h3>Casa5</h3>
-                        </div>
-                        <img src="../img/pexels-pixabay-280229.jpg" alt="Casa5">
-                        <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
-                        <p class="precio">Precio: $1000000</p>
-                    </div>
-                    <div class="card_destacadas">
-                        <div class="card_titulo">
-                            <h3>Casa6</h3>
-                        </div>
-                        <img src="../img/pexels-pixabay-259962.jpg" alt="Casa6">
-                        <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
-                        <p class="precio">Precio: $1000000</p>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <footer>
-            <nav class="footer_nav">
-                <div class="footer_links">
                     <a href="./index.html">HOME</a>
                     <a href="./html/nosotros.html">NOSOTROS</a>
                     <a href="./html/alquileres.html">ALQUILERES</a>
@@ -130,29 +33,171 @@
                     <a href="./html/proyectos.html">PROYECTOS</a>
                     <a href="./html/contacto.html">CONTACTO</a>
                 </div>
-                <div class="social">
-                    <a href="https://facebook.com"><img src="../img/Facebook.svg" alt="facebook"></a>
-                    <a href="https://twitter.com/home"><img src="../img/Twitter.svg" alt="X"></a>
-                    <a href="https://instagram.com"><img src="../img/Instagram.svg" alt="instagram"></a>
-                    <a href="https://whatsapp.com"><img src="../img/WhatsApp.svg" alt="whatsapp"></a>
-                    <a href="https://linkedin.com"><img src="../img/Linkedin.svg" alt="linkedin"></a>
-                </div>
-                <div class="info_footer">
-                    <h3>Info-1</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ipsum id reiciendis placeat. Dolorem distinctio consequuntur nulla nisi optio numquam.
-                    </p>
-                </div>
-                <div class="info_footer">
-                    <h3>Info-2</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ipsum id reiciendis placeat. Dolorem distinctio consequuntur nulla nisi optio numquam.
-                    </p>
-                </div>
-            </nav>
-            <div class="copyright">
-                <p><b>Copyright © <script>document.write(new Date().getFullYear());</script> All Rights Reserved.</p></b></p>
             </div>
-        </footer>
-    </body>
+        </nav>
+    </header>
+    <article class="articulo1">
+        <h2>Busqueda por categorías</h2>
+        <section class="busqueda">
+            <select aria-label="state" name="select" id="tipo_operacion">
+                <option value="1" selected>Tipo Operacion</option>
+                <option value="2">Venta</option>
+                <option value="3">Alquiler</option>
+                <option value="4">Alquiler temporario</option>
+            </select>
+            <select aria-label="state" name="propiedad" id="tipo_propiedad">
+                <option value="1" selected>Tipo Propiedad</option>
+                <option value="2">Casa</option>
+                <option value="3">Ph</option>
+                <option value="4">Oficina</option>
+                <option value="5">Cochera</option>
+                <option value="6">Locales</option>
+                <option value="7">Galpón</option>
+                <option value="8">Depósito</option>
+                <option value="9">Terreno</option>
+            </select>
+            <div class="input">
+                <input type="text" id="location_quicksearch" placeholder="Buscar por ubicación, dirección o calle"
+                    class="montserrat ui-autocomplete-input">
+            </div>
+            <div>
+                <button>BUSCAR</button>
+            </div>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2 class="destacadas-titulo">PROPIEDADES DESTACADAS</h2>
+            <div class="grid-container">
+        <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa1</h3>
+                </div>
+                <img src="./img/pexels-pixabay-164558.jpg" alt="Casa1">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa2</h3>
+                </div>
+                <img src="./img/pexels-terry-magallanes-2635038.jpg" alt="Casa2">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa3</h3>
+                </div>
+                <img src="./img/pexels-sharath-g-2251247.jpg" alt="Casa3">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa4</h3>
+                </div>
+                <img src="./img/pexels-saviesa-home-2089698.jpg" alt="Casa4">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa5</h3>
+                </div>
+                <img src="./img/pexels-pixabay-534151.jpg" alt="Casa5">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa6</h3>
+                </div>
+                <img src="./img/pexels-pixabay-280229.jpg" alt="Casa6">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa7</h3>
+                </div>
+                <img src="./img/pexels-pixabay-275484.jpg" alt="Casa7">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa8</h3>
+                </div>
+                <img src="./img/pexels-pixabay-259588.jpg" alt="Casa8">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card_titulo">
+                    <h3>Casa9</h3>
+                </div>
+                <img src="./img/pexels-mark-2724749.jpg" alt="Casa9">
+                <p class="descripcion_propiedad">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam saepe labore facere tempora aliquid porro nisi eum quibusdam a ipsum sunt corrupti exercitationem sequi doloremque, enim ea eius modi?</p>
+                <div class="precio">
+                    <p>Precio: $1000000</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    </article>
+    <footer>
+        <nav class="footer_nav">
+            <div class="footer_links">
+                <a href="./index.html">HOME</a>
+                <a href="./html/nosotros.html">NOSOTROS</a>
+                <a href="./html/alquileres.html">ALQUILERES</a>
+                <a href="./html/ventas.html">VENTAS</a>
+                <a href="./html/proyectos.html">PROYECTOS</a>
+                <a href="./html/contacto.html">CONTACTO</a>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com"><img src="../img/Facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/home"><img src="../img/Twitter.svg" alt="X"></a>
+                <a href="https://instagram.com"><img src="../img/Instagram.svg" alt="instagram"></a>
+                <a href="https://whatsapp.com"><img src="../img/WhatsApp.svg" alt="whatsapp"></a>
+                <a href="https://linkedin.com"><img src="../img/Linkedin.svg" alt="linkedin"></a>
+            </div>
+            <div class="info_footer">
+                <h3>Info-1</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ipsum id reiciendis placeat. Dolorem
+                    distinctio consequuntur nulla nisi optio numquam.
+                </p>
+            </div>
+            <div class="info_footer">
+                <h3>Info-2</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ipsum id reiciendis placeat. Dolorem
+                    distinctio consequuntur nulla nisi optio numquam.
+                </p>
+            </div>
+        </nav>
+        <div class="copyright">
+            <p><b>Copyright ©
+                    <script>document.write(new Date().getFullYear());</script> All Rights Reserved.</p></b></p>
+        </div>
+    </footer>
+</body>
 </html>
